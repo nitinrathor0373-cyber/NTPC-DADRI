@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saraswati | Smart Shopping</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="toast" id="statusToast" role="status" aria-live="polite"></div>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div>
+            <h1>Saraswati</h1>
+            <p>Smart Shopping Hub</p>
+          </div>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search for products, brands and more" />
+          <button id="searchButton">Search</button>
+        </div>
+        <div class="nav-actions">
+          <button class="ghost">Become a Seller</button>
+          <button class="ghost">Login</button>
+          <button class="cart-indicator">
+            Cart <span id="cartCount">0</span>
+          </button>
+        </div>
+      </nav>
+      <section class="hero-content">
+        <div>
+          <h2>Festival Ready Deals on Saraswati</h2>
+          <p>
+            Discover curated collections, lightning deals, and next-day delivery across
+            electronics, fashion, and home essentials.
+          </p>
+          <div class="hero-actions">
+            <button class="primary">Shop Now</button>
+            <button class="secondary">Explore Categories</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h4>20k+</h4>
+              <p>Verified sellers</p>
+            </div>
+            <div>
+              <h4>45 min</h4>
+              <p>Express delivery</p>
+            </div>
+            <div>
+              <h4>₹0</h4>
+              <p>Returns fee</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Today’s Spotlight</h3>
+          <p>Up to 45% off on premium electronics with instant bank offers.</p>
+          <ul>
+            <li>Easy returns & exchanges</li>
+            <li>24/7 live order tracking</li>
+            <li>Cashback on prepaid orders</li>
+          </ul>
+          <button class="primary">Grab Deals</button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="filters">
+        <div>
+          <h3>Browse by category</h3>
+          <p class="muted">Shop by the most loved Saraswati departments.</p>
+        </div>
+        <div class="category-list" id="categoryList"></div>
+      </section>
+
+      <section class="content-grid">
+        <div class="products">
+          <div class="section-heading">
+            <div>
+              <h3>Featured Products</h3>
+              <p>Handpicked essentials for your Saraswati cart.</p>
+            </div>
+            <div class="trust-badges">
+              <span>✨ Assured</span>
+              <span>⚡ Same day</span>
+              <span>💳 Pay later</span>
+            </div>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+
+        <aside class="cart">
+          <div class="section-heading">
+            <h3>Your Cart</h3>
+            <button class="link" id="clearCart">Clear</button>
+          </div>
+          <div class="cart-items" id="cartItems"></div>
+          <div class="cart-summary" id="cartSummary"></div>
+          <button class="primary full" id="checkoutButton">Proceed to Checkout</button>
+          <div class="security-note">
+            <span>🔒</span>
+            <p>Secure checkout with Saraswati Pay Protect.</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h4>Saraswati Care</h4>
+        <p>Need help? Call 1800-555-9090 or chat with us 24/7.</p>
+      </div>
+      <div>
+        <h4>Shipping</h4>
+        <p>Free delivery on orders above ₹15,000. Lightning express across metros.</p>
+      </div>
+      <div>
+        <h4>Payment</h4>
+        <p>UPI, cards, EMI, cash on delivery, and Saraswati Pay Later.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
